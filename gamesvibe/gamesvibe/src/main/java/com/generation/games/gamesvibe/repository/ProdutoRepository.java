@@ -9,5 +9,5 @@ import com.generation.games.gamesvibe.model.Produto;
 
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long> {
-	public List<ProdutoRepository> findAllByNomeProdutoContainingIgnoreCase(String nomeProduto);
+	public List<Produto> findAllByNomeProdutoContainingIgnoreCase(String nomeProduto);
 }
